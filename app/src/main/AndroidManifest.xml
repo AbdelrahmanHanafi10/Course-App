@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.course">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Course">
+        <activity
+            android:name=".detail_admin"
+            android:parentActivityName=".CoursesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Startpage"
+            android:exported="true" />
+        <activity
+            android:name=".CoursesActivity"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".SignUp_page"
+            android:exported="true"
+            android:parentActivityName=".Account_student" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:parentActivityName=".Account_student" />
+        <activity
+            android:name=".Account_student"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".Account_admin"
+            android:parentActivityName=".Startpage"
+            android:exported="true" />
+        <activity
+            android:name=".detail"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:parentActivityName=".CoursesActivity" />
+        <activity
+            android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".Update_courses"
+            android:exported="true"
+            android:parentActivityName=".CoursesActivity" />
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:parentActivityName=".Startpage" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
